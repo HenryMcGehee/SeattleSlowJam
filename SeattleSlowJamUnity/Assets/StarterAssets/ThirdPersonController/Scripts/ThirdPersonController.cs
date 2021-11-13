@@ -14,6 +14,8 @@ namespace StarterAssets
 #endif
 	public class ThirdPersonController : MonoBehaviour
 	{
+		public bool canMove;
+
 		[Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 2.0f;
@@ -117,9 +119,11 @@ namespace StarterAssets
 		{
 			_hasAnimator = TryGetComponent(out _animator);
 			
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+			if(canMove){
+				JumpAndGravity();
+				GroundedCheck();
+				Move();
+			}
 		}
 
 		private void LateUpdate()
