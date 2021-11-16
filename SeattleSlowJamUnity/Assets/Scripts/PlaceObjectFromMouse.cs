@@ -53,9 +53,14 @@ public class PlaceObjectFromMouse : MonoBehaviour
     }
 
     private void NextObject(){
-        if(diaIndex > 2){
+        if(diaIndex == 3){
             Debug.Log("fffff");
             gameManager.GetComponent<CameraController>().cameraSwitcher(0);
+        }
+
+        if(diaIndex == 6){
+            Debug.Log("fffff");
+            gameManager.GetComponent<CameraController>().cameraSwitcher(2);
         }
 
         if(objIndex > prefabs.Length){
