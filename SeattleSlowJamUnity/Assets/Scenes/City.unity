@@ -399,20 +399,18 @@ GameObject:
   - component: {fileID: 148899683}
   - component: {fileID: 148899682}
   - component: {fileID: 148899681}
-  - component: {fileID: 148899680}
   - component: {fileID: 148899679}
   - component: {fileID: 148899678}
-  - component: {fileID: 148899677}
-  - component: {fileID: 148899676}
-  - component: {fileID: 148899675}
-  - component: {fileID: 148899698}
-  - component: {fileID: 148899697}
-  - component: {fileID: 148899696}
   - component: {fileID: 148899695}
   - component: {fileID: 148899694}
   - component: {fileID: 148899693}
-  - component: {fileID: 148899692}
+  - component: {fileID: 148899699}
+  - component: {fileID: 148899675}
   - component: {fileID: 148899674}
+  - component: {fileID: 148899692}
+  - component: {fileID: 148899680}
+  - component: {fileID: 148899677}
+  - component: {fileID: 148899676}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -434,7 +432,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 4
   indentLevel: 0
-  storyText: sfffff
+  storyText: One bite was enough to quench the mightiest of thirsts
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -473,6 +471,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 148899665}
+  - {fileID: 148899699}
   - {fileID: 148899673}
   suppressAllAutoSelections: 0
 --- !u!114 &148899667
@@ -489,9 +488,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: fffff
+  storyText: It was here where he stumbled upon an incredible fruit that he had never
+    seen before.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -516,9 +516,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: asdfasdf
+  storyText: He eventually found a small oasis to take shelter in.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -571,11 +571,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 46.99156, y: -97.20883}
+  scrollPos: {x: 93.17344, y: -81.65108}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 0.52000046
+  zoom: 0.7000003
   scrollViewRect:
     serializedVersion: 2
     x: -343
@@ -583,9 +583,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 148899695}
+  - {fileID: 148899682}
   selectedCommands:
-  - {fileID: 148899693}
+  - {fileID: 148899675}
   variables: []
   description: 
   stepPause: 0
@@ -654,14 +654,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 148899664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 41
+  itemId: 45
   indentLevel: 0
-  targetObject: {fileID: 1470253273}
-  methodName: NextObject
-  delay: 0
+  description: 
+  targetObject: {fileID: 102177476}
+  targetComponentAssemblyName: GameManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameManager
+  targetMethod: ChangeLevel
+  targetMethodText: 'ChangeLevel (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &148899675
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -671,14 +699,88 @@ MonoBehaviour:
   m_GameObject: {fileID: 148899664}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 44
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 102177476}
+  targetComponentAssemblyName: CItyDialogueManager, Assembly-CSharp, Version=0.0.0.0,
+    Culture=neutral, PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: CItyDialogueManager
+  targetMethod: FadeOut
+  targetMethodText: 'FadeOut (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &148899676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148899664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 49
+  indentLevel: 0
+  description: 
+  targetObject: {fileID: 102177476}
+  targetComponentAssemblyName: GameManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameManager
+  targetMethod: ChangeLevel
+  targetMethodText: 'ChangeLevel (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
+--- !u!114 &148899677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148899664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 23
+  itemId: 48
   indentLevel: 0
-  storyText: sfffff
+  storyText: A few generations later the city has sprawled out for miles in every
+    direction.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -687,53 +789,8 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
-  waitForVO: 0
+  waitForVO: 1
   setSayDialog: {fileID: 0}
---- !u!114 &148899676
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148899664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 89.58977
-    y: 385.34244
-    width: 60
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 30
-  blockName: 7
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 148899675}
-  - {fileID: 148899692}
-  suppressAllAutoSelections: 0
---- !u!114 &148899677
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148899664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 21
-  indentLevel: 0
-  targetObject: {fileID: 1470253273}
-  methodName: NextObject
-  delay: 0
 --- !u!114 &148899678
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -748,9 +805,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: sfffff
+  storyText: A few generations later the city has sprawled out for miles in every
+    direction.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -775,8 +833,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 89.88547
-    y: 342.48563
+    x: 179.88553
+    y: 473.91385
     width: 60
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -787,25 +845,55 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 148899678}
-  - {fileID: 148899677}
+  - {fileID: 148899674}
+  - {fileID: 148899692}
+  - {fileID: 148899680}
   suppressAllAutoSelections: 0
 --- !u!114 &148899680
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148899664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 18
+  itemId: 47
   indentLevel: 0
-  targetObject: {fileID: 1470253273}
-  methodName: NextObject
-  delay: 0
+  description: 
+  targetObject: {fileID: 102177476}
+  targetComponentAssemblyName: GameManager, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: GameManager
+  targetMethod: ChangeLevel
+  targetMethodText: 'ChangeLevel (Int32): Void'
+  methodParameters:
+  - objValue:
+      typeAssemblyname: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral,
+        PublicKeyToken=b77a5c561934e089
+      typeFullname: System.Int32
+      intValue: 2
+      boolValue: 0
+      floatValue: 0
+      stringValue: 
+      colorValue: {r: 0, g: 0, b: 0, a: 0}
+      gameObjectValue: {fileID: 0}
+      materialValue: {fileID: 0}
+      objectValue: {fileID: 0}
+      spriteValue: {fileID: 0}
+      textureValue: {fileID: 0}
+      vector2Value: {x: 0, y: 0}
+      vector3Value: {x: 0, y: 0, z: 0}
+    variableKey: 
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
 --- !u!114 &148899681
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -820,9 +908,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 17
   indentLevel: 0
-  storyText: sfffff
+  storyText: Eventually word got around and before long a small village grew out
+    of the oasis.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -859,7 +948,9 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 148899681}
-  - {fileID: 148899680}
+  - {fileID: 148899675}
+  - {fileID: 148899677}
+  - {fileID: 148899676}
   suppressAllAutoSelections: 0
 --- !u!114 &148899683
 MonoBehaviour:
@@ -892,9 +983,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 14
   indentLevel: 0
-  storyText: sfffff
+  storyText: "Once they had tasted his oasis sorbet, the rescue party didn\u2019t
+    want to leave either."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -964,7 +1056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 11
   indentLevel: 0
-  storyText: sfffff
+  storyText: "One day a rescue party finally found the chef, he didn\u2019t want
+    to leave."
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1036,9 +1129,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 8
   indentLevel: 0
-  storyText: sfffff
+  storyText: What began as cooking for survival soon became a culinary obsession.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1079,21 +1172,31 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &148899692
 MonoBehaviour:
-  m_ObjectHideFlags: 2
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 148899664}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 38
+  itemId: 46
   indentLevel: 0
-  targetObject: {fileID: 1470253273}
-  methodName: NextObject
-  delay: 0
+  storyText: sfffff
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!114 &148899693
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1194,35 +1297,7 @@ MonoBehaviour:
   - {fileID: 148899694}
   - {fileID: 148899693}
   suppressAllAutoSelections: 0
---- !u!114 &148899696
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148899664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 34
-  indentLevel: 0
-  description: 
-  targetObject: {fileID: 102177476}
-  targetComponentAssemblyName: CItyDialogueManager, Assembly-CSharp, Version=0.0.0.0,
-    Culture=neutral, PublicKeyToken=null
-  targetComponentFullname: UnityEngine.Component[]
-  targetComponentText: CItyDialogueManager
-  targetMethod: FadeOut
-  targetMethodText: 'FadeOut (): Void'
-  methodParameters: []
-  saveReturnValue: 0
-  returnValueVariableKey: 
-  returnValueType: System.Void
-  showInherited: 0
-  callMode: 0
---- !u!114 &148899697
+--- !u!114 &148899699
 MonoBehaviour:
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1234,9 +1309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemId: 33
+  itemId: 42
   indentLevel: 0
-  storyText: sfffff
+  storyText: and the sweet and tangy flavor, was unlike anything the chef had ever
+    tasted.
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -1249,35 +1325,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &148899698
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 148899664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeRect:
-    serializedVersion: 2
-    x: 90.62427
-    y: 426.72208
-    width: 60
-    height: 40
-  tint: {r: 1, g: 1, b: 1, a: 1}
-  useCustomTint: 0
-  itemId: 39
-  blockName: 8
-  description: 
-  eventHandler: {fileID: 0}
-  commandList:
-  - {fileID: 148899697}
-  - {fileID: 148899674}
-  - {fileID: 148899696}
-  suppressAllAutoSelections: 0
 --- !u!1 &249236867
 GameObject:
   m_ObjectHideFlags: 1
@@ -2222,6 +2269,7 @@ MonoBehaviour:
   - {fileID: 5562490187050754658, guid: 3ec249b41f2f11e4680c51b94d325b3b, type: 3}
   - {fileID: 4841162258424826668, guid: a245ed6744448924fa380e07ea5b85ca, type: 3}
   gameManager: {fileID: 0}
+  particle: {fileID: 1584386825951043624, guid: c76ae07e6be08c64ba75ebc3f7b0d4f9, type: 3}
   diaIndex: 0
 --- !u!114 &1470253278
 MonoBehaviour:
@@ -2950,3 +2998,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 21.601, y: -25.916, z: -0.07}
+--- !u!1001 &1984589829
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511793, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_Name
+      value: Characters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+--- !u!114 &1984589830 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1257103370962561186, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+  m_PrefabInstance: {fileID: 1984589829}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -412,6 +412,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3db1c9e2bbeb5e04a99fc56f4c89338c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1090932894 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1257103370962561186, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+  m_PrefabInstance: {fileID: 2098755221}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1214125660
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +448,11 @@ GameObject:
   - component: {fileID: 1214125674}
   - component: {fileID: 1214125673}
   - component: {fileID: 1214125672}
+  - component: {fileID: 1214125680}
+  - component: {fileID: 1214125679}
+  - component: {fileID: 1214125678}
+  - component: {fileID: 1214125682}
+  - component: {fileID: 1214125681}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -458,7 +474,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: sfsdfsdf
+  storyText: 'Every night when the moon was low in the sky, she would jump as high
+    as she could. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -513,7 +530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 3
   indentLevel: 0
-  storyText: sfsdfsdf
+  storyText: "I told the fish that the top of the mountain was nowhere near close
+    to the moon but that didn\u2019t lessen her resolve. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -568,7 +586,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 1
   indentLevel: 0
-  storyText: sfsdfsdf
+  storyText: 'Apparently every night the fish would come to the surface and watch
+    the moon drift across the sky longing for it to take her with it. '
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -622,7 +641,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -86, y: -97}
+  scrollPos: {x: -36, y: 18}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
@@ -636,7 +655,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1214125674}
   selectedCommands:
-  - {fileID: 1214125672}
+  - {fileID: 1214125681}
   variables: []
   description: 
   stepPause: 0
@@ -715,7 +734,7 @@ MonoBehaviour:
   delay: 0
 --- !u!114 &1214125672
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -772,9 +791,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 15
   indentLevel: 0
-  storyText: sfsdfsdf
+  storyText: 'One night a huge storm rolled in and clouds covered the sky. '
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1090932894}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -811,6 +830,10 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1214125673}
+  - {fileID: 1214125679}
+  - {fileID: 1214125678}
+  - {fileID: 1214125682}
+  - {fileID: 1214125681}
   - {fileID: 1214125672}
   suppressAllAutoSelections: 0
 --- !u!114 &1214125675
@@ -844,7 +867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 12
   indentLevel: 0
-  storyText: sfsdfsdf
+  storyText: "Unfortunately she couldn\u2019t jump high enough. "
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
@@ -872,7 +895,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 127
-    y: 203
+    y: 204
     width: 65.2
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -883,8 +906,231 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1214125676}
+  - {fileID: 1214125680}
   - {fileID: 1214125675}
   suppressAllAutoSelections: 0
+--- !u!114 &1214125678
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214125660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 22
+  indentLevel: 0
+  targetObject: {fileID: 917183565}
+  methodName: FadeOut
+  delay: 0
+--- !u!114 &1214125679
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214125660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 21
+  indentLevel: 0
+  storyText: The winds swept the fish up into the sky with tremendous force.
+  description: 
+  character: {fileID: 1090932894}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1214125680
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214125660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 20
+  indentLevel: 0
+  storyText: 'Even so the fish never gave up. '
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1214125681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214125660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 24
+  indentLevel: 0
+  storyText: The poor thing made it off of our planet but missed the moon.
+  description: 
+  character: {fileID: 1090932894}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1214125682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214125660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 23
+  indentLevel: 0
+  storyText: 'Because of the storm however, she could no longer see the moon. '
+  description: 
+  character: {fileID: 1090932894}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!1001 &1391499513
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496084, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2325172217845496086, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
+      propertyPath: m_Name
+      value: StandardSayDialog
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0a98da57262b0c74ba6d5725d09e48fd, type: 3}
 --- !u!1 &1597813493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,3 +1529,60 @@ MonoBehaviour:
   force: {x: 0, y: 400}
   fishCount: 1
   canSpawn: 1
+--- !u!1001 &2098755221
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511792, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1257103371660511793, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}
+      propertyPath: m_Name
+      value: Characters
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7c7531db407dbac4c803c661c61604f4, type: 3}

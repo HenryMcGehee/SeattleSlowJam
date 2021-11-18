@@ -9,6 +9,8 @@ public class PlaceObjectFromMouse : MonoBehaviour
     private GameObject currentObject;
 
     public GameObject gameManager;
+
+    public ParticleSystem particle;
     private int objIndex;
     public int diaIndex;
 
@@ -46,6 +48,7 @@ public class PlaceObjectFromMouse : MonoBehaviour
                 Instantiate(currentObject, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
                 //NextObject();
                 currentObject = null;
+                Instantiate(particle, hit.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
                 gameManager.GetComponent<CItyDialogueManager>().PlayDialogue(diaIndex);
                 diaIndex++;
             }

@@ -13,6 +13,7 @@ public class ClickToMove : MonoBehaviour
 
     public Flowchart chart;
 
+    public ParticleSystem particle;
     private CameraController cam;
 
 
@@ -36,12 +37,6 @@ public class ClickToMove : MonoBehaviour
                 int layer_mask = LayerMask.GetMask("Terrain");
                 int layer_mask2 = LayerMask.GetMask("Deer");
 
-                if(Physics.Raycast(ray, out hitInfo, 1000f, layer_mask)){
-                    float distance = Vector3.Distance (hitInfo.point, transform.position);
-                    if(distance < distanceCanMove){
-                        agent.SetDestination(hitInfo.point);
-                    }
-                }
                 if(Physics.Raycast(ray, out hitInfo, 1000f, layer_mask2)){
                     float distance = Vector3.Distance (hitInfo.point, transform.position);
                     if(distance < distanceCanTalk){
@@ -49,6 +44,13 @@ public class ClickToMove : MonoBehaviour
                         Talking = true;
                         chart.ExecuteBlock("Talk1");
                         cam.cameraSwitcher(1);
+                    }
+                }
+                else if(Physics.Raycast(ray, out hitInfo, 1000f, layer_mask)){
+                    float distance = Vector3.Distance (hitInfo.point, transform.position);
+                    if(distance < distanceCanMove){
+                        ParticleSystem p = Instantiate(particle, hitInfo.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
+                        agent.SetDestination(hitInfo.point);
                     }
                 }
             }
