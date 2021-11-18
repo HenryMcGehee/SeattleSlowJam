@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/City.unity
     guid: 86d821ad8c404544fb26abef274c567f
+  - enabled: 1
+    path: Assets/Scenes/MainScene2.unity
+    guid: e6289e86371d0024ebd0e39bf52bf618
+  - enabled: 1
+    path: Assets/Scenes/Fish.unity
+    guid: 9404923982a4f514cb85b872832b09c2
+  - enabled: 1
+    path: Assets/Scenes/MainScene3.unity
+    guid: 5619bc40fa2409d40b12391cb9713870
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}

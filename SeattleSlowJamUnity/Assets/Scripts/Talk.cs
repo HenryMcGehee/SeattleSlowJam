@@ -8,8 +8,6 @@ public class Talk : MonoBehaviour
 {
     private GameObject player;
     public Flowchart chart;
-    public CinemachineVirtualCamera vcam1;
-    public CinemachineVirtualCamera vcam2;
 
     private CameraController cam;
 

@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Fungus;
+
+public class FishDialogueManager : MonoBehaviour
+{
+
+    public Flowchart chart;
+    public FadeManager fade;
+
+    void Start()
+    {
+        fade.SetFade(1,0);
+    }
+
+    void Update()
+    {
+        
+    }
+
+    public void PlayDialogue(int i){
+        chart.ExecuteBlock(i.ToString());
+    }
+}

@@ -7,6 +7,11 @@ TagManager:
   - CinemachineTarget
   - vCam
   - GameManager
+  - FishPlane
+  - Fish
+  - Spawn1
+  - Spawn2
+  - MainSceneSpawner
   layers:
   - Default
   - TransparentFX

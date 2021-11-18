@@ -21,4 +21,8 @@ public class CItyDialogueManager : MonoBehaviour
     public void PlayDialogue(int i){
         chart.ExecuteBlock(i.ToString());
     }
+
+    public void FadeOut(){
+        fade.SetFade(0,1);
+    }
 }
