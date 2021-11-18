@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Fungus;
 public class MainSceneSpawn : MonoBehaviour
 {
     GameObject player;
@@ -10,8 +11,13 @@ public class MainSceneSpawn : MonoBehaviour
     public Transform pos2;
 
     public bool firstSpawn = true;
+    public Flowchart chart;
+
+    private CameraController cam;
 
     void Awake(){
+
+
         DontDestroyOnLoad(this.gameObject);
     }
     // Start is called before the first frame update
