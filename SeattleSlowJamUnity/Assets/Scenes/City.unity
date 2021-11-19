@@ -230,7 +230,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d127a1ce4308ec844849e454f0450263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vCams: []
+  vCams:
+  - {fileID: 1858619805}
+  - {fileID: 1823657056}
+  - {fileID: 1889957297}
+  - {fileID: 1852810471}
 --- !u!4 &102177478
 Transform:
   m_ObjectHideFlags: 0
@@ -283,6 +287,7 @@ GameObject:
   - component: {fileID: 125707470}
   - component: {fileID: 125707469}
   - component: {fileID: 125707468}
+  - component: {fileID: 125707471}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -350,7 +355,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 79197ecfbc3a4294a89ce589dac02cf2, type: 3}
+    m_Font: {fileID: 12800000, guid: 85d9a0f1bf82cb24ba6f811ee02ed5d0, type: 3}
     m_FontSize: 45
     m_FontStyle: 0
     m_BestFit: 0
@@ -371,6 +376,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125707466}
   m_CullTransparentMesh: 1
+--- !u!114 &125707471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125707466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &148899664
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +454,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: One bite was enough to quench the mightiest of thirsts
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -583,7 +603,7 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 148899685}
+  - {fileID: 148899682}
   selectedCommands: []
   variables: []
   description: 
@@ -1058,7 +1078,7 @@ MonoBehaviour:
   storyText: "One day a rescue party finally found the chef, he didn\u2019t want
     to leave."
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1313,7 +1333,7 @@ MonoBehaviour:
   storyText: and the sweet and tangy flavor, was unlike anything the chef had ever
     tasted.
   description: 
-  character: {fileID: 0}
+  character: {fileID: 1984589830}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
@@ -1379,6 +1399,7 @@ GameObject:
   - component: {fileID: 490527377}
   - component: {fileID: 490527379}
   - component: {fileID: 490527378}
+  - component: {fileID: 490527380}
   m_Layer: 5
   m_Name: NameText
   m_TagString: Untagged
@@ -1402,7 +1423,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 586.5, y: -38.369995}
+  m_AnchoredPosition: {x: 691, y: -38.369995}
   m_SizeDelta: {x: 1106, y: 71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &490527378
@@ -1426,7 +1447,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: bb145366ce7024469a5758b08d31802c, type: 3}
+    m_Font: {fileID: 12800000, guid: 85d9a0f1bf82cb24ba6f811ee02ed5d0, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -1447,6 +1468,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490527376}
   m_CullTransparentMesh: 1
+--- !u!114 &490527380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490527376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1001 &652913261
 PrefabInstance:
   m_ObjectHideFlags: 0

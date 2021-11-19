@@ -16,6 +16,9 @@ public class ClickToMove : MonoBehaviour
     public ParticleSystem particle;
     private CameraController cam;
 
+    public Animator anim;
+    public float velocity;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,14 @@ public class ClickToMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(agent.velocity != Vector3.zero){
+            anim.SetBool("isMoving", true);
+        }
+        else{
+            anim.SetBool("isMoving", false);
+
+        }
+
         if(!Talking){
 
             if(Input.GetMouseButtonDown(0)){
@@ -51,6 +62,7 @@ public class ClickToMove : MonoBehaviour
                     if(distance < distanceCanMove){
                         ParticleSystem p = Instantiate(particle, hitInfo.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
                         agent.SetDestination(hitInfo.point);
+
                     }
                 }
             }

@@ -68,11 +68,11 @@ public class PlaceObjectFromMouse : MonoBehaviour
         }
 
         if(diaIndex == 12){
-            gameManager.GetComponent<CameraController>().cameraSwitcher(3);
+            gameManager.GetComponent<CameraController>().cameraSwitcher(2);
         }
 
         if(diaIndex == 24){
-            gameManager.GetComponent<CameraController>().cameraSwitcher(0);
+            gameManager.GetComponent<CameraController>().cameraSwitcher(3);
         }
 
         currentObject = Instantiate(prefabs[objIndex]);

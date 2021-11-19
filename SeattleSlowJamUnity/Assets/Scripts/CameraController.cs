@@ -5,29 +5,25 @@ using Cinemachine;
 
 public class CameraController : MonoBehaviour
 {
-    GameObject[] temp;
-    public List<CinemachineVirtualCamera> vCams;
+    public GameObject[] vCams;
+
     //public int activeCam = 0;
     void Start()
     {
-        temp = GameObject.FindGameObjectsWithTag("vCam");
-
-        for(int i = 0; i < temp.Length; i++){
-            vCams.Add(temp[i].GetComponent<CinemachineVirtualCamera>());
-        }
+        //vCams = GameObject.FindGameObjectsWithTag("vCam");
     }
 
     // Update is called once per frame
 
     public void cameraSwitcher(int i)
     {
-        if(i <= vCams.Count){
-            for(int j = 0; j < vCams.Count; j++){
+        if(i <= vCams.Length){
+            for(int j = 0; j < vCams.Length; j++){
                 if(j == i){
-                    vCams[j].Priority = 20;
+                    vCams[j].GetComponent<CinemachineVirtualCamera>().Priority = 20;
                 }
                 else{
-                    vCams[j].Priority = 0;
+                    vCams[j].GetComponent<CinemachineVirtualCamera>().Priority = 0;
                 }
             }
         }
