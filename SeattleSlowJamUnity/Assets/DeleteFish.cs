@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class DeleteFish : MonoBehaviour
 {
-    public GameObject fishManager;
+    public FishLauncher fishManager;
+    GameObject gameManager;
+
+    void Start(){
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+    }
 
     public void OnTriggerEnter(Collider other){
         if(other.CompareTag("Fish")){
             Destroy(other.gameObject);
-            fishManager.GetComponent<FishLauncher>().canSpawn = true;
+            fishManager.canSpawn = true;
         }
     }
 }

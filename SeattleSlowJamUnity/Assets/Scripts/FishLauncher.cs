@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class FishLauncher : MonoBehaviour
 {
     public GameObject fish;
+    public GameObject defaultCamPos;
     public Vector2 force;
+    public CinemachineVirtualCamera cam;
     RaycastHit hitInfo;
     Collider coll;
 
@@ -31,11 +34,15 @@ public class FishLauncher : MonoBehaviour
 
             if(coll.Raycast(ray, out hitInfo, 1000f)){
                 if(fishCount % 5 != 0 && canSpawn){
-                    GameObject fishObj = Instantiate(fish, hitInfo.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
-                    fishObj.GetComponent<Rigidbody>().AddForce(force);
-                    fishCount++;
-                    force += new Vector2(0, 20);
-                    canSpawn = false;
+                    if(GameObject.FindGameObjectWithTag("Fish") == null){
+
+                        GameObject fishObj = Instantiate(fish, hitInfo.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
+                        fishObj.GetComponent<Rigidbody>().AddForce(force);
+                        force += new Vector2(0, 20);
+                        canSpawn = false;
+                        cam.Follow = fishObj.transform;
+                        fishCount++;
+                    }
                 }
 
                 if(fishCount % 5 == 0){

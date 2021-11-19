@@ -45,32 +45,44 @@ public class PlaceObjectFromMouse : MonoBehaviour
             }    
             
             if(Input.GetMouseButtonDown(0)){
+
                 Instantiate(currentObject, hit.point, Quaternion.FromToRotation(Vector3.up, hit.normal));
-                //NextObject();
                 currentObject = null;
                 Instantiate(particle, hit.point, Quaternion.FromToRotation(Vector3.up, Vector3.up));
-                gameManager.GetComponent<CItyDialogueManager>().PlayDialogue(diaIndex);
+                
+                if(diaIndex % 5 == 0){
+                    gameManager.GetComponent<CItyDialogueManager>().PlayDialogue(diaIndex);
+                }
+                else{
+                    NextObject();
+                }
+
                 diaIndex++;
             }
         }
     }
 
     private void NextObject(){
-        if(diaIndex == 3){
+        if(diaIndex == 6){
+            gameManager.GetComponent<CameraController>().cameraSwitcher(1);
+        }
+
+        if(diaIndex == 12){
+            gameManager.GetComponent<CameraController>().cameraSwitcher(3);
+        }
+
+        if(diaIndex == 24){
             gameManager.GetComponent<CameraController>().cameraSwitcher(0);
         }
 
-        if(diaIndex == 6){
-            gameManager.GetComponent<CameraController>().cameraSwitcher(2);
-        }
-
-        if(objIndex > prefabs.Length){
+        currentObject = Instantiate(prefabs[objIndex]);
+        objIndex++;
+        
+        /*if(objIndex > prefabs.Length){
             objIndex = 0;
-            currentObject = Instantiate(prefabs[objIndex]);
         }
         else{
-            objIndex++;
             currentObject = Instantiate(prefabs[objIndex]);
-        }
+        }*/
     }
 }

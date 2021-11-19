@@ -1677,6 +1677,9 @@ GameObject:
   - component: {fileID: 1032530162}
   - component: {fileID: 1032530171}
   - component: {fileID: 1032530168}
+  - component: {fileID: 1032530180}
+  - component: {fileID: 1032530181}
+  - component: {fileID: 1032530182}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1711,7 +1714,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1032530144}
   selectedCommands:
-  - {fileID: 1032530152}
+  - {fileID: 1032530161}
   variables: []
   description: 
   stepPause: 0
@@ -1804,10 +1807,13 @@ MonoBehaviour:
   - {fileID: 1032530168}
   - {fileID: 1032530167}
   - {fileID: 1032530165}
+  - {fileID: 1032530180}
   - {fileID: 1032530152}
   - {fileID: 1032530164}
   - {fileID: 1032530163}
   - {fileID: 1032530162}
+  - {fileID: 1032530182}
+  - {fileID: 1032530181}
   - {fileID: 1032530161}
   suppressAllAutoSelections: 0
 --- !u!4 &1032530145
@@ -1989,7 +1995,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 35
   indentLevel: 0
-  storyText: So before you eventually head back down the mountain
+  storyText: Before you eventually head back down the mountain
   description: 
   character: {fileID: 13731378}
   portrait: {fileID: 0}
@@ -2689,6 +2695,87 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 13731378}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1295995038}
+--- !u!114 &1032530181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  storyText: All of their uniqueness makes our world worth living in.
+  description: 
+  character: {fileID: 13731378}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1295995038}
+--- !u!114 &1032530182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 43
+  indentLevel: 0
+  storyText: All of them give our world it's flavor.
+  description: 
+  character: {fileID: 13731378}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 1295995038}
 --- !u!4 &1035512711 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: baf0f05e92d73214ca74d5e1547d9c6e, type: 3}
