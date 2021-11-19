@@ -1561,6 +1561,15 @@ GameObject:
   - component: {fileID: 1032530167}
   - component: {fileID: 1032530164}
   - component: {fileID: 1032530163}
+  - component: {fileID: 1032530176}
+  - component: {fileID: 1032530178}
+  - component: {fileID: 1032530182}
+  - component: {fileID: 1032530181}
+  - component: {fileID: 1032530180}
+  - component: {fileID: 1032530179}
+  - component: {fileID: 1032530177}
+  - component: {fileID: 1032530184}
+  - component: {fileID: 1032530183}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1595,7 +1604,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1032530144}
   selectedCommands:
-  - {fileID: 1032530150}
+  - {fileID: 1032530163}
   variables: []
   description: 
   stepPause: 0
@@ -1649,7 +1658,7 @@ MonoBehaviour:
   nodeRect:
     serializedVersion: 2
     x: 151
-    y: 140
+    y: 139
     width: 82.8
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -1665,6 +1674,7 @@ MonoBehaviour:
   - {fileID: 1032530146}
   - {fileID: 1032530147}
   - {fileID: 1032530160}
+  - {fileID: 1032530176}
   - {fileID: 1032530159}
   - {fileID: 1032530158}
   - {fileID: 1032530174}
@@ -1675,11 +1685,19 @@ MonoBehaviour:
   - {fileID: 1032530155}
   - {fileID: 1032530154}
   - {fileID: 1032530153}
+  - {fileID: 1032530182}
+  - {fileID: 1032530181}
+  - {fileID: 1032530180}
+  - {fileID: 1032530179}
+  - {fileID: 1032530178}
   - {fileID: 1032530172}
   - {fileID: 1032530171}
   - {fileID: 1032530170}
   - {fileID: 1032530152}
   - {fileID: 1032530151}
+  - {fileID: 1032530177}
+  - {fileID: 1032530184}
+  - {fileID: 1032530183}
   - {fileID: 1032530169}
   - {fileID: 1032530150}
   - {fileID: 1032530168}
@@ -1718,7 +1736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 2
   indentLevel: 0
-  storyText: I've heard it's very good.
+  storyText: I heard that it was very good.
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -1841,7 +1859,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 7
   indentLevel: 0
-  storyText: Okay then.
+  storyText: I suppose I could try.
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -1885,7 +1903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 5
   indentLevel: 0
-  storyText: 'Well what else you got? '
+  storyText: And why not?
   description: 
   character: {fileID: 1636707998}
   portrait: {fileID: 0}
@@ -2044,7 +2062,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 13
   indentLevel: 0
-  storyText: So what was the point of that story?
+  storyText: I'll bet.
   description: 
   character: {fileID: 1636707998}
   portrait: {fileID: 0}
@@ -2133,8 +2151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 20
   indentLevel: 0
-  storyText: 'I was all alone but one day, a little fish started crawling out of
-    the ocean and on to the beach. '
+  storyText: 'One day, I spied apon a little fish flinging itself out of the ocean. '
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -2161,7 +2178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 33
   indentLevel: 0
-  storyText: She told me that it was her dream to reach the moon.
+  storyText: She told me that the moon had come to her in a dream.
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -2188,7 +2205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 32
   indentLevel: 0
-  storyText: 'I asked what a fish was doing out of the ocean. '
+  storyText: 'I asked what a fish was doing out of the ocean for so long. '
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -2275,7 +2292,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 31
   indentLevel: 0
-  storyText: 'I watched as she struggled to drag herself into the grass. '
+  storyText: I watched it for the better part of a month.
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -2330,7 +2347,7 @@ MonoBehaviour:
   itemId: 29
   indentLevel: 0
   storyText: 'I know it might not look like it but a long time ago this whole area
-    was covered in water. '
+    used to be a vast ocean. '
   description: 
   character: {fileID: 1753174633}
   portrait: {fileID: 0}
@@ -2438,7 +2455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 25
   indentLevel: 0
-  storyText: What if the fruit was a metaphor for friendship or something.
+  storyText: What if the fruit was a metaphor for friendship or something?
   description: 
   character: {fileID: 1636707998}
   portrait: {fileID: 0}
@@ -2495,6 +2512,229 @@ MonoBehaviour:
   storyText: All of that because of ice cream.
   description: 
   character: {fileID: 1636707998}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  storyText: So what was the point of that story?
+  description: 
+  character: {fileID: 1636707998}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 40
+  indentLevel: 0
+  storyText: Hmm
+  description: 
+  character: {fileID: 1753174633}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 35
+  indentLevel: 0
+  storyText: 'Well what else you got? '
+  description: 
+  character: {fileID: 1636707998}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 39
+  indentLevel: 0
+  targetObject: {fileID: 936228553}
+  methodName: setMethod
+  delay: 0
+--- !u!114 &1032530180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 38
+  indentLevel: 0
+  storyText: Fair enough.
+  description: 
+  character: {fileID: 1753174633}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17a200dbd67304446a3019434503338a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 37
+  indentLevel: 0
+  targetObject: {fileID: 936228553}
+  methodName: setMethod
+  delay: 0
+--- !u!114 &1032530182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 36
+  indentLevel: 0
+  storyText: What's the point of history if you can't learn from it.
+  description: 
+  character: {fileID: 1636707998}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 42
+  indentLevel: 0
+  storyText: ...
+  description: 
+  character: {fileID: 1636707998}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 936228558}
+--- !u!114 &1032530184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032530141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 41
+  indentLevel: 0
+  storyText: I might have something.
+  description: 
+  character: {fileID: 1753174633}
   portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
